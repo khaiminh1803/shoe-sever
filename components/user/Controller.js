@@ -220,24 +220,7 @@ const deleteUserById = async (id) => {
     return false;
 }
 
-// // update user
-// const updateUser = async (id, name, email, address, phonenumber, avatar) => {
-//     try {
-//         const user = await userModel.findById(id)
-//         if (user) {
-//             user.name = name ? name : user.name
-//             user.email = email ? email : user.email
-//             user.address = address ? address : user.address
-//             user.phonenumber = phonenumber ? phonenumber : user.phonenumber
-//             user.avatar = avatar ? avatar : user.avatar
-//             await item.save()
-//             return true
-//         }
-//     } catch (error) {
-//         console.log('Update user error: ', error);
-//     }
-//     return false
-// }
+
 
 
 module.exports = { login, register, updateProfile, getAllUsers, getUserById, deleteUserById, sendVerificationCode, verifyCode, createUser, changePassword, sendResetPasswordCode, resetPassword }
